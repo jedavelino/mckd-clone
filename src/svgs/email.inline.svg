@@ -1,0 +1,8 @@
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6" transform="translate(-3.000000, -5.000000)">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            <path d="M19.19775,5 L4.80225,5 C3.808875,5 3,5.78634482 3,6.75205062 L3,17.2479494 C3,18.2092805 3.808875,19 4.80225,19 L19.19775,19 C20.191125,19 21,18.2092805 21,17.2479494 L21,6.75205062 C21,5.78634482 20.191125,5 19.19775,5 Z M19,9.99731999 L12,15 L5,9.99731999 L5,8 L12,13.00268 L19,8 L19,9.99731999 Z" id="Fill-1" fill="currentColor" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
