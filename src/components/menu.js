@@ -1,9 +1,12 @@
 import React from "react"
 import MinusIcon from "../svgs/minus.inline.svg"
+import InstagramIcon from "../svgs/instagram.inline.svg"
+import TwitterIcon from "../svgs/twitter.inline.svg"
+import YoutubeIcon from "../svgs/youtube.inline.svg"
 
 export default function Menu() {
   return (
-    <section className="bg-gold-500">
+    <nav className="bg-gold-500 pb-6 flex-1 lg:flex lg:flex-col lg:justify-between lg:py-6">
       <div className="px-4 lg:px-10">
         <div className="lg:flex lg:flex-wrap lg:-mx-4">
           <div className="w-full lg:w-1/4 lg:px-4">
@@ -191,35 +194,68 @@ export default function Menu() {
             </div>
           </div>
         </div>
-        <div>
-          <ul className="list-reset">
-            <li>
-              <span className="text-sm text-gray-500">Sitemap+</span>
-            </li>
-            <li>
-              <span className="text-sm text-gray-500">Archive</span>
-            </li>
-            <li>
-              <span className="text-sm text-gray-500">Careers</span>
-            </li>
-            <li>
-              <span className="text-sm text-gray-500">Terms & Conditions</span>
-            </li>
-            <li>
-              <span className="text-sm text-gray-500">Privacy Policy</span>
-            </li>
-            <li>
-              <span className="text-sm text-gray-500">Disclaimer</span>
-            </li>
-            <li>
-              <span className="text-sm text-gray-500">Accessibility</span>
-            </li>
-            <li>
-              <span className="text-sm text-gray-500">Copyright Policy</span>
-            </li>
-          </ul>
-        </div>
       </div>
-    </section>
+      <div className="px-4 lg:px-10">
+        <ul className="list-reset mt-6 lg:flex lg:items-center lg:-mx-4">
+          <li>
+            <span className="text-sm text-gray-500 mt-1 inline-block lg:px-4">
+              Sitemap+
+            </span>
+          </li>
+          <li>
+            <span className="text-sm text-gray-500 mt-1 inline-block lg:px-4">
+              Archive
+            </span>
+          </li>
+          <li>
+            <span className="text-sm text-gray-500 mt-1 inline-block lg:px-4">
+              Careers
+            </span>
+          </li>
+          <li>
+            <span className="text-sm text-gray-500 mt-1 inline-block lg:px-4">
+              Terms & Conditions
+            </span>
+          </li>
+          <li>
+            <span className="text-sm text-gray-500 mt-1 inline-block lg:px-4">
+              Privacy Policy
+            </span>
+          </li>
+          <li>
+            <span className="text-sm text-gray-500 mt-1 inline-block lg:px-4">
+              Disclaimer
+            </span>
+          </li>
+          <li>
+            <span className="text-sm text-gray-500 mt-1 inline-block lg:px-4">
+              Accessibility
+            </span>
+          </li>
+          <li>
+            <span className="text-sm text-gray-500 mt-1 inline-block lg:px-4">
+              Copyright Policy
+            </span>
+          </li>
+        </ul>
+        <ul className="list-reset flex items-center mt-6 -mx-3">
+          <li>
+            <span className="text-gray-500 inline-block px-3">
+              <InstagramIcon className="h-6 w-6 fill-current" />
+            </span>
+          </li>
+          <li>
+            <span className="text-gray-500 inline-block px-3">
+              <TwitterIcon className="h-6 w-6 fill-current" />
+            </span>
+          </li>
+          <li>
+            <span className="text-gray-500 inline-block px-3">
+              <YoutubeIcon className="h-6 w-6 fill-current" />
+            </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
   )
 }

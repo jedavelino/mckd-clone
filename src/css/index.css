@@ -1,3 +1,4 @@
+@import "./base/body.css";
 @tailwind base;
 @import "./components/header.css";
 @tailwind components;
