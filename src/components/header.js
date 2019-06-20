@@ -38,7 +38,7 @@ export default class Header extends Component {
         }
       >
         <nav className="px-4 py-4 shadow bg-white lg:flex lg:justify-between lg:py-0 lg:px-10">
-          <div className="flex items-center justify-between lg:py-3">
+          <div className="flex items-center justify-between lg:py-5">
             <img className="h-16 w-auto" src={logo} alt="" />
             <ul className="list-reset flex items-center -mx-2 lg:hidden">
               <li className="px-2 leading-none">
