@@ -11,7 +11,8 @@ import PrinterIcon from "../svgs/printer.inline.svg"
 import VolumnIcon from "../svgs/volumn.inline.svg"
 import FontUpIcon from "../svgs/fontUp.inline.svg"
 import FontDownIcon from "../svgs/fontDown.inline.svg"
-import Menu from "./menu"
+import Menu from "./Header/menu"
+import Search from "./Header/search"
 
 export default class Header extends Component {
   state = {
@@ -21,23 +22,41 @@ export default class Header extends Component {
   toggleMenu = () => {
     this.setState({
       menuIsOpen: !this.state.menuIsOpen,
+      searchIsOpen: this.state.searchIsOpen
+        ? !this.state.searchIsOpen
+        : this.state.searchIsOpen,
     })
   }
   toggleSearch = () => {
     this.setState({
       searchIsOpen: !this.state.searchIsOpen,
+      menuIsOpen: this.state.menuIsOpen
+        ? !this.state.menuIsOpen
+        : this.state.menuIsOpen,
     })
+  }
+  close = e => {
+    if (this.state.searchIsOpen || this.state.menuIsOpen) {
+      if (e.keyCode === 27) {
+        this.setState({
+          searchIsOpen: false,
+          menuIsOpen: false,
+        })
+      }
+    }
   }
   render() {
     return (
       <header
         className={
-          this.state.menuIsOpen
-            ? "antialiased fixed inset-x-0 top-0 flex flex-col h-full overflow-y-auto"
-            : "antialiased fixed inset-x-0 top-0 flex flex-col"
+          this.state.menuIsOpen || this.state.searchIsOpen
+            ? "antialiased bg-white focus:outline-none shadow z-50 fixed inset-x-0 top-0 flex flex-col h-full overflow-y-auto"
+            : "antialiased bg-white focus:outline-none shadow z-50 fixed inset-x-0 top-0 flex flex-col"
         }
+        onKeyDown={this.close}
+        tabIndex="0"
       >
-        <nav className="px-4 py-4 shadow bg-white lg:flex lg:justify-between lg:py-0 lg:px-10">
+        <nav className="px-4 py-4 bg-white lg:flex lg:justify-between lg:py-0 lg:px-10">
           <div className="flex items-center justify-between lg:py-5">
             <img className="h-16 w-auto" src={logo} alt="" />
             <ul className="list-reset flex items-center -mx-2 lg:hidden">
@@ -147,19 +166,9 @@ export default class Header extends Component {
                   </span>
                 </li>
               </ul>
-              <div
-                className={
-                  this.state.searchIsOpen ? "block lg:ml-24" : "hidden"
-                }
-              >
-                <input
-                  className="appearance-none border-b border-gray-900 w-full py-2 text-gray-900 leading-tight text-sm focus:outline-none"
-                  type="search"
-                  placeholder="What are you looking for?"
-                />
-              </div>
+              {this.state.searchIsOpen && <Search />}
             </div>
-            <div className="-mr-2 flex items-center lg:border-l lg:self-center lg:h-full lg:-mr-4 lg:pl-4 lg:ml-8">
+            <div className="-mr-2 flex items-center md:ml-8 lg:border-l lg:self-center lg:h-full lg:-mr-4 lg:pl-4">
               <span onClick={this.toggleSearch} className="px-2 lg:px-4">
                 <SearchIcon className="h-5 lg:h-6 w-auto" />
               </span>

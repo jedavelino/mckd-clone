@@ -10,11 +10,11 @@ export default function Footer() {
   return (
     <footer className="bg-gold-500">
       <div className="bg-gold-600">
-        <div className="lg:container lg:px-4">
+        <div className="container lg:px-4">
           <div className="lg:flex lg:justify-between">
-            <div className="py-3 px-4">
+            <div className="py-3 px-4 flex-shrink-0">
               <div className="flex items-center justify-between -mx-4">
-                <div className="text-sm px-4">Comments</div>
+                <div className="text-sm px-4 leading-tight">Comments</div>
                 <div className="px-4">
                   <span className="inline-block bg-gold-900 text-white uppercase px-3 py-2 text-sm">
                     View All
@@ -22,9 +22,9 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="py-3 border-t border-gold-800 px-4">
+            <div className="py-3 border-t border-gold-800 px-4 flex-shrink-0">
               <div className="flex items-center justify-between -mx-4">
-                <div className="px-4 text-sm">
+                <div className="px-4 text-sm leading-tight">
                   Rate the content of this page
                 </div>
                 <div className="px-4 flex py-2">
@@ -36,9 +36,9 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="py-3 border-t border-gold-800 px-4">
+            <div className="py-3 border-t border-gold-800 px-4 flex-shrink-0">
               <div className="flex items-center justify-between -mx-4">
-                <div className="text-sm px-4">
+                <div className="text-sm px-4 leading-tight">
                   Did you find this content helpful?
                 </div>
                 <div className="flex px-4">
@@ -55,34 +55,34 @@ export default function Footer() {
         </div>
       </div>
       <div className="py-6 border-t border-gold-800 lg:py-3">
-        <div className="lg:container px-4">
-          <div className="lg:flex lg:items-center lg:-mx-4 lg:flex-1">
-            <div className="sm:flex sm:flex-wrap sm:-mx-4 lg:flex-no-wrap lg:mx-0 lg:items-center">
-              <div className="flex items-center sm:w-1/3 sm:px-4">
+        <div className="container px-4">
+          <div className="lg:flex lg:items-center lg:-mx-4 lg:flex-1 lg:justify-between">
+            <div className="sm:flex sm:flex-wrap sm:-mx-4 lg:flex-no-wrap lg:mx-0 lg:items-center lg:flex-1">
+              <div className="flex items-center sm:w-1/3 sm:px-4 md:w-auto md:flex-1 md:justify-center">
                 <CheckCicle className="fill-current text-gold-900 w-6 flex-shrink-0" />
-                <span className="text-sm uppercase font-semibold ml-2">
+                <span className="text-sm uppercase font-semibold ml-2 xl:text-base">
                   Client Satisfaction Survey
                 </span>
               </div>
-              <div className="flex items-center mt-4 sm:w-1/3 sm:mt-0 sm:px-4">
+              <div className="flex items-center mt-4 sm:w-1/3 sm:mt-0 sm:px-4 md:w-auto md:flex-1 md:justify-center">
                 <Poll className="fill-current text-gold-900 w-6 flex-shrink-0" />
-                <span className="text-sm uppercase font-semibold ml-2">
+                <span className="text-sm uppercase font-semibold ml-2 xl:text-base">
                   Online Poll
                 </span>
               </div>
-              <div className="flex items-center mt-4 sm:w-1/3 sm:mt-0 sm:px-4">
+              <div className="flex items-center mt-4 sm:w-1/3 sm:mt-0 sm:px-4 md:w-auto md:flex-1 md:justify-center">
                 <Phone className="fill-current text-gold-900 w-6 flex-shrink-0" />
-                <span className="text-sm uppercase font-semibold ml-2">
+                <span className="text-sm uppercase font-semibold ml-2 xl:text-base">
                   Call Us: 800552255
                 </span>
               </div>
             </div>
 
-            <div className="flex justify-between mt-6 sm:-mx-4 sm:justify-start lg:mt-0 lg:mx-0">
+            <div className="flex mt-6 sm:-mx-4 lg:mt-0 lg:mx-0">
               <span className="inline-block sm:w-1/3 sm:px-4 lg:w-auto">
                 <img className="h-12 w-auto" src={govLogo} alt="" />
               </span>
-              <span className="inline-block sm:w-1/3 sm:px-4 lg:w-auto">
+              <span className="inline-block ml-6 sm:ml-0 sm:w-1/3 sm:px-4 lg:w-auto">
                 <img className="h-12 w-auto" src={myLogo} alt="" />
               </span>
             </div>
@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="py-6 border-t border-gold-800">
-        <div className="lg:container px-4">
+        <div className="container px-4">
           <div className="sm:flex sm:-mx-4 lg:justify-between">
             <div className="sm:flex-1 sm:px-4 lg:max-w-md xl:max-w-lg">
               <div className="flex -mx-4">

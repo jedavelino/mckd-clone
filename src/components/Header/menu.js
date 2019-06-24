@@ -1,8 +1,8 @@
 import React from "react"
-import MinusIcon from "../svgs/minus.inline.svg"
-import InstagramIcon from "../svgs/instagram.inline.svg"
-import TwitterIcon from "../svgs/twitter.inline.svg"
-import YoutubeIcon from "../svgs/youtube.inline.svg"
+import MinusIcon from "../../svgs/minus.inline.svg"
+import InstagramIcon from "../../svgs/instagram.inline.svg"
+import TwitterIcon from "../../svgs/twitter.inline.svg"
+import YoutubeIcon from "../../svgs/youtube.inline.svg"
 
 export default function Menu() {
   return (
